@@ -1,0 +1,457 @@
+/* Global styles */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* Home section */
+
+#home {
+  height: 100vh;
+  background-image: url('../img/home/bg_image1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home h1 {
+  font-size: 5.5rem;
+  color: #f8eaa9;
+  text-shadow: 0px 0px #000;
+}
+
+#home h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0px 0px #000;
+}
+
+#home h3 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0px 0px #000;
+}
+
+#home p {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0px 0px #000;
+}
+
+/* Navigation bar */
+
+.navbar {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  z-index: 1;
+  
+}
+
+.navbar.show {
+  transform: translateY(0);
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+}
+
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar-brand img {
+  max-height: 60px; /* adjust this value as needed */
+  padding: 5px; /* adjust this value as needed */
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+/* About Us section */
+
+#about {
+  padding: 5rem 0;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  max-height: 640px; /* adjust this value as needed */
+  padding: 5px; /* adjust this value as needed */
+  border-radius: 20px; /* adjust this value as needed */
+}
+
+/* Our Management section */
+
+#management {
+  padding: 5rem 0;
+}
+
+#management .card {
+  border: none;
+  box-shadow: none;
+}
+
+#management .card img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  max-height: 300px; /* adjust this value as needed */
+}
+
+#management h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.management-item {
+  margin-bottom: 3rem;
+}
+
+.management-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.management-item p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+/* Products section */
+
+#products {
+  padding: 5rem 0;
+}
+
+#products h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.product-item {
+  margin-bottom: 3rem;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-item p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Our Process section */
+
+#process {
+  padding: 5rem 0;
+}
+
+#process img {
+  border-radius: 10%;
+  max-width: 100%;
+  height: auto;
+  max-height: 250px; /* adjust this value as needed */
+}
+
+#process h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+#process h4 {
+  font-size: 1.0rem;
+  color: #333;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.process-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.process-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+
+.process-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.process-item p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Gallery section */
+
+#gallery {
+  padding: 80px 0;
+}
+
+#gallery .row {
+  margin: 0 -15px;
+}
+
+#gallery img {
+  border-radius: 10%;
+  max-width: 100%;
+  height: auto;
+  max-height: 450px; /* adjust this value as needed */
+  margin-bottom: 30px;
+}
+
+#gallery h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.gallery-item {
+  margin-bottom: 5rem;
+}
+
+/* Contact Us section */
+
+#contact {
+padding: 5rem 0;
+}
+
+#contact h2 {
+font-size: 2.5rem;
+color: #333;
+margin-bottom: 2rem;
+}
+
+.contact-form {
+max-width: 500px;
+margin: 0 auto;
+}
+
+.form-group {
+margin-bottom: 1.5rem;
+}
+
+.form-control {
+font-size: 1.2rem;
+padding: 0.8rem 1rem;
+border-radius: 5px;
+border: 2px solid #ddd;
+}
+
+.form-control:focus {
+border-color: #333;
+}
+
+.btn-primary {
+background-color: #333;
+border-color: #333;
+font-size: 1.2rem;
+padding: 0.8rem 1rem;
+border-radius: 5px;
+font-weight: 700;
+transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+background-color: #000;
+border-color: #000;
+}
+
+/* Footer */
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 3rem 0;
+
+}
+
+.footer-item {
+margin-bottom: 1rem;
+}
+
+.footer-item h4 {
+font-size: 1.5rem;
+margin-bottom: 1rem;
+}
+
+.footer-item p {
+font-size: 1.2rem;
+line-height: 1.5;
+margin-bottom: 1rem;
+}
+
+.social-icons {
+display: flex;
+justify-content: center;
+}
+
+.social-icons a {
+display: inline-block;
+margin-right: 1rem;
+}
+
+.social-icons i {
+font-size: 2rem;
+color: #fff;
+transition: all 0.2s ease;
+}
+
+.social-icons i:hover {
+color: #ccc;
+}
+
+/* WhatsApp */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 0;
+}
+
+.whatsapp img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp:hover img {
+  transform: scale(1.1);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 75%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(1)}
+  to {-webkit-transform:scale(2)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0.4)}
+  to {transform:scale(1)}
+}
+
+@-webkit-keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(0)}
+}
+@keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(0)}
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.out {
+  animation-name: zoom-out;
+  animation-duration: 0.6s;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+      width: 100%;
+  }
+}
+
